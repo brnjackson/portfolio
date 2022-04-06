@@ -37,7 +37,7 @@ document.getElementById('hamburger').addEventListener("click", () => {
     let navbar = document.getElementById('navbar').style
 
     navbar.display = "block";
-    navbar.backgroundColor = "black";
+    navbar.backgroundColor = "#e5baa02a";
     navbar.width = "100vw"
     navbar.textAlign = "center"
     navbar.marginTop = 0
