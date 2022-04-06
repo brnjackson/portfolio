@@ -1,0 +1,437 @@
+/* Google Sans Font */
+@font-face {
+    font-family: "Product Sans";
+    src: url("/fonts/ProductSans-Medium.woff") format('woff');
+}
+
+@font-face {
+    font-family: "Product Sans";
+    src: url("/fonts/ProductSans-Bold.woff") format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Product Sans";
+    src: url("/fonts/ProductSans-Light.woff") format('woff');
+    font-weight: 100;
+
+}
+
+@font-face {
+    font-family: "Product Sans";
+    src: url("/fonts/ProductSans-Italic.woff") format('woff');
+    font-style: italic;
+}
+
+/* Transitions */
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+  }
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+/* Basic Element Styling */
+body {
+    background-color: #5f4331;
+    margin:0;
+    padding: 0;
+    font-family: Product Sans;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(255, 228, 196, 0.507);
+    font-size: 1.5rem;
+    font-weight: 100;
+    transition: all .5s ease-out;
+    flex: 1;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+    color: #271a12;
+}
+
+section {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* Container Styling */
+
+
+/* Navbar Styling*/
+#navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    text-decoration: none;
+    text-align: right;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+    font-size: 1rem;
+    transition: all .5s ease-out;
+    flex: 1;
+}
+
+#navbar a:hover, a:focus {
+    text-decoration: none;
+    color: #271a12;
+}
+
+#hamburger {
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    font-size: 1.5rem;
+    display: none;
+}
+
+#menu_close {
+    display: none;
+    position: block;
+    
+}
+
+
+/* Hero Styling */
+
+#hero {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.hero_text {
+    width: 100%;
+}
+
+#title {
+    color: white;
+    font-weight: 100;
+    font-size: 2rem;
+}
+
+#name {
+    font-size: 6rem;
+    color: #e5baa02a;
+}
+
+.social_links {
+    text-decoration: none;
+    margin: 5%;
+    
+}
+
+.fa-brands {
+    padding: 5px;
+    color: rgba(245, 245, 245, 0.219);
+    font-size: 3rem;
+}
+
+i:hover{
+    color: #271a12;
+    position: relative; 
+    transition: all .5s ease-out;
+}
+
+
+/* About Me Styling */
+
+#about_me {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.info {
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: left;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+.info h2 {
+    color: #e5baa02a;
+    font-size: 10rem;
+}
+
+
+
+/* Skills styling */
+#skills {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#skill_text {
+    display: flex;
+    flex-direction: column;
+}
+#skill_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    flex-wrap: wrap;
+    
+}
+
+.skillset {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+ i.fab {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.356);
+}
+
+.skill_text h3 {
+    font-size: 3rem;
+    font-style: italic;
+    padding: 5px;
+    margin: 5px;
+    color: #e5baa02a;
+}
+/* Project section Styling */ 
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.project_container {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    text-align:center;
+    margin: auto;
+}
+
+@media screen and (max-width: 1000px) {
+    .project_container {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .project_card {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        font-size: 1.2rem;
+        align-items: center;
+    }
+
+    .project_image {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        width: 20%;
+        }
+    .info, img {
+        width: 75%;
+        text-align: left;
+
+    }
+
+    img.am_gif {
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .contact_gif {
+        width: 100%;
+    }
+
+    #hamburger {
+        display: block;
+    }
+
+    
+    #navbar {
+        display: none;
+    }
+
+    #navbar a {
+        text-decoration: none;
+        font-size: 2rem;
+    }
+
+    #menu_close {
+        display: block;
+    }
+
+    #top {
+        display: none;
+    }
+    
+
+}
+
+.project_card {
+    width: 40%;
+    display: flex;
+    padding: 2rem;
+}
+
+
+h3.project_title {
+    font-size: 1.3rem;
+    font-style: none;
+    margin-bottom: 0;
+    color: #271a12;
+}
+
+p.project_desc {
+    padding-top: 2%;
+    margin: 0;
+    font-weight: 100;
+}
+
+.tech_used {
+    font-style: italic;
+}
+
+.project_image {
+    width: 200px;
+    border-radius: 25%;
+    padding: 2%;
+    height: 200px;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.viewproject_btn {
+    background-color: transparent;
+    border: 1px solid rgba(255, 228, 196, 0.507);
+    color: rgba(255, 228, 196, 0.507);
+    font-family: Product Sans;
+    padding: .5rem;
+    width: 5rem;
+}
+
+.viewproject_btn:hover {
+    background-color: #271a12;
+}
+
+
+
+
+
+/* Footer/contact styling */
+
+#footer {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contact_container {
+    width: 50%;
+    font-weight: 100;
+    font-size: 1.5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.contact_container h2 {
+    font-size: 5rem;
+}
+
+.contact_container a {
+    font-size: 1.8rem;
+}
+
+.contact_btns {
+    padding: 10%;
+}
+
+
+/* Headings Styling */
+
+h1 {
+    font-size: 5rem;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+}
+
+/* scrollbar styling */
+
+
+  
+::-webkit-scrollbar {
+width: 5px;
+position: static;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #271a12;
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 5px;
+}
+
+
